@@ -32,7 +32,7 @@ def get_spiciest_foods(spicy_foods):
 
 def print_spicy_foods(spicy_foods):
     for food in spicy_foods:
-        print(food.get("name") + " (" + food.get("cuisine") + ") | " + "\U0001f336\uFE0F " * food.get("heat_level"))
+        print(food.get("name") + " (" + food.get("cuisine") + ") | Heat Level: " + "\U0001f336\uFE0F" * food.get("heat_level"))
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
     food_cuisine = []
@@ -55,4 +55,5 @@ def get_average_heat_level(spicy_foods):
     return avg / tot
 
 def create_spicy_food(spicy_foods, spicy_food):
+    my_food = []
     return spicy_foods.append(spicy_food)
